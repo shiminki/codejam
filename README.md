@@ -1,4 +1,4 @@
-# codejam
+# Google Code Jam 2022
 
 This repository consists my solution code for the 2022 Google Code Jam competiton, in which I have qualified up to Round 2. The codes for competition prior to 2022 are my practice solutions. The following table summarized my result in the competiton.
 
