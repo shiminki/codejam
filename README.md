@@ -4,6 +4,6 @@ This repository consists my solution code for the 2022 Google Code Jam competito
 
 | Round  | Score | Standings |
 | ------------- | ------------- | ------------- |
-| Qualification Round  | 71/100  | 3521/32702 |
-| Round 1A | 56/100  | 1352/11244 |
-| Round 2 | 12/100 | 2284/3384 |
+| Qualification Round  | 71/100  | 3521st out of 32702 |
+| Round 1A | 56/100  | 1352nd out of 11244 |
+| Round 2 | 12/100 | 2284th out of 3384 |
