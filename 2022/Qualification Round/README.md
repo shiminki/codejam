@@ -16,3 +16,5 @@ Let $C, M, Y, K$ be the minimum cartridge of each color. (i.e. $C = \min(C_1, C_
 In such cases, we simply set $c, m, y, k$ that satisfies the above condition.
 
 # [d1000000]([url](https://codingcompetitions.withgoogle.com/codejam/round/0000000000876ff1/0000000000a46471))
+
+Given N dice with different number of sides, we must create the longest "straight line" 
