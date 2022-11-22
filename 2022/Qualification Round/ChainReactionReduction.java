@@ -43,10 +43,7 @@ public class ChainReactionReduction {
                 // u will be reduced such that every verticies pointing u
                 // will now point to p. However, x will be called first
                 // so fun of x will be now fun of u
-
-                List<Integer> neighbor = new ArrayList<>();
                 for (int v : inAdj.get(u)) {
-                    neighbor.add(v);
                     if (x == -1 || fun[x] > fun[v])
                         x = v;
                 }
