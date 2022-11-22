@@ -19,4 +19,13 @@ The overall time and space complexity is O(N), as each index is iterated once an
 # [Equal Sum]([url](https://codingcompetitions.withgoogle.com/codejam/round/0000000000877ba5/0000000000aa8fc1))
 
 This problem can be solved with the use of binary numbers. Since $\log(10^9) \\approx 29.9 \leq 30$, first 30 elements of A will be $2^0, ... 2^{29}$. Using the first
-30 elements, we can express every integer from 1 to $2^{30} - 1 \\aprox 1.07 \cdot 10^9$
+30 elements, we can express every integer from 1 to $2^{30} - 1 \approx 1.07 \cdot 10^9$. Nonetheless, if every elements in B is close to $10^9$, then the sum we have to
+aim for is in the magnitude of $N * 10^9 = 10^{11}$. Thus we first attempt to select our numbers from B and the other 70 elements in A, and then use the first 30 elements of A to reach our aim. 
+
+1. Calculate goal = (sum(A) + sum(B)) / 2
+2. sum <- 0
+3. for b in B, if sum + b <= goal, set sum <- sum + b
+4. for i = 100 to 31, if sum + A[i] <= goal, set sum <- sum + A[i]
+5. if sum < goal, we find binary representation of goal - sum, and then use first 30 elements of A to set sum equal to goal.
+
+Since the algorithm only consists of iteration of A and B in constant time, it has time and space complexity of O(N) each.
